@@ -352,7 +352,38 @@ const cartList = [
 
 //------------------------FUNCTIONS RELATED TO STORE HTML----------------------------
 function createItemCard(item) {
-  const imageUrl = "placeholder.jpg";
+  const burgerimg = "/Users/anujay/Desktop/projects/mos burger/src/burger.jpg";
+  const subimage = "/Users/anujay/Desktop/projects/mos burger/src/sub.jpg";
+  const friesimage = "/Users/anujay/Desktop/projects/mos burger/src/fries.webp";
+  const pastaimage =
+    "/Users/anujay/Desktop/projects/mos burger/src/paasta.webp";
+  const beverageimage =
+    "/Users/anujay/Desktop/projects/mos burger/src/beverage.jpg";
+  const chickenimage =
+    "/Users/anujay/Desktop/projects/mos burger/src/chicken.jpg";
+
+  let imageUrl = burgerimg;
+  switch (item.category) {
+    case "Burgers":
+      imageUrl = burgerimg;
+      break;
+
+    case "Submarines":
+      imageUrl = subimage;
+      break;
+    case "Fries":
+      imageUrl = friesimage;
+      break;
+    case "Pasta":
+      imageUrl = pastaimage;
+      break;
+    case "Chicken":
+      imageUrl = chickenimage;
+      break;
+    case "Beverages":
+      imageUrl = beverageimage;
+      break;
+  }
   return `
     <div class="col-lg-3 col-md-4 mb-3 col-sm-6">
       <div class="card">
