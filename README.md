@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an inventory management system developed for a Mos Burger Shop. It includes features for managing inventory items, user records, and order placement.
+This project is an inventory management system developed for a Mos Burger Shop. It includes features for managing inventory items, user records, and order placement.(Only using Html,Css and Java Script . Bootsrap used for styling.,)
 
 ## Features
 
